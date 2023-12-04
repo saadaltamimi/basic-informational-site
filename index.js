@@ -4,17 +4,13 @@ const path = require('path');
 const url = require("url");
 
 // Create Server Object
-
 const server = http.createServer((req, res) => {
-    // console.log("Request url: " + req.url); 
     let filePath = path.join(
         __dirname, 'public', req.url === '/' ? 'index.html': req.url + ".html");
-        // console.log("File Path: " + filePath); 
 
     // Extension of file:
     let extname = path.extname(filePath);
-    // console.log("Extension name: " + extname); 
-    
+
     // Initial content type
     let contentType = 'text/html';
 
