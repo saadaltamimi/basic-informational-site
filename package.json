@@ -1,0 +1,15 @@
+{
+  "name": "basic-informational-site",
+  "version": "1.0.0",
+  "description": "Project: Basic Informational Site",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "author": "Saad Altamimi",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
